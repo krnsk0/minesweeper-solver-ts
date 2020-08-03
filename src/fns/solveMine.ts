@@ -1,7 +1,11 @@
 import { parseMap } from './parseMap';
+import { propagateZeros } from './propagateZeroes';
+import { printMap } from './printMap';
 
 export const solveMine = (map: string, n: number): string => {
-  const m = parseMap(map, n);
+  let m = parseMap(map, n);
 
-  return ``;
+  m = propagateZeros(m);
+
+  return printMap(m);
 };
