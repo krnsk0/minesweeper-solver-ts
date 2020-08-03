@@ -1,0 +1,20 @@
+{
+  "name": "minesweeper-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node build/index.js",
+    "watch": "ts-node-dev --respawn -- src/index.ts"
+  },
+  "dependencies": {
+    "@types/node": "^14.0.27",
+    "chalk": "^4.1.0",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.56"
+  },
+  "author": "",
+  "license": "ISC"
+}
